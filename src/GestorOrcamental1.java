@@ -4,10 +4,10 @@ public class GestorOrcamental1 {
     {
         System.out.println ();
         System.out.println("Bem-vindo ao seu gestor orçamental.");
-        System.out.println("===================================");
-        for (String param : args) {
-             System.out.println("Parametro:" + param);
-        }
+        //System.out.println("===================================");
+        //for (String param : args) {
+        //     System.out.println("Parametro:" + param);
+        //}
         System.out.println ();
     } 
 }
