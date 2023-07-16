@@ -10,15 +10,25 @@ public class GestorOrcamental1 {
         //     System.out.println("Parametro:" + param);
         //}
 
-        double compra1 = 19.25;
-        double compra2 = 12.5;
-        double compra3 = 15.3;
-        double orcamento = 80;
+        double compra1, compra2, compra3, orcamento;
+
+        System.out.print("Introduza o valor da 1ª compra: ");
+        compra1 = Le.umDouble();
+
+        System.out.print("Introduza o valor da 2ª compra: ");
+        compra2 = Le.umDouble();
+
+        System.out.print("Introduza o valor da 3ª compra: ");
+        compra3 = Le.umDouble();
+
+        System.out.print("Introduza o valor do orçamento: ");
+        orcamento = Le.umDouble();
+
         double despesa_total = compra1 + compra2 + compra3;
         double saldo_final = orcamento - despesa_total;
         double saldo_final_percentagem = saldo_final /orcamento*100;
 
-        System.out.println("Hoje gastou " + despesa_total + " euros.");
+        System.out.println("Gastou " + despesa_total + " euros.");
         System.out.println("Ficou com " + saldo_final + " euros.");
         System.out.println("Gastou " + despesa_total/orcamento*100 + "% do seu orçamento e ficou com " + saldo_final_percentagem + "% do seu orçamento.");
     } 
