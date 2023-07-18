@@ -13,11 +13,11 @@ public class GestorOrcamental1 {
         int escolha;
 
         System.out.println("Escolha uma das seguintes opções: ");
-        System.out.println("1 - Fazer compras ");
-        System.out.println("2 - Eliminar a última compra ");
-        System.out.println("3 - Ver compras efetuadas ");
-        System.out.println("4 - Ver a média semanal ");
-        System.out.println("5 - Sair ");
+        System.out.println("1 - Fazer compras");
+        System.out.println("2 - Eliminar a última compra");
+        System.out.println("3 - Ver compras efetuadas");
+        System.out.println("4 - Ver a média semanal");
+        System.out.println("5 - Sair");
         System.out.print("Introduza aqui a opção: ");
         escolha = Le.umInt();
 
