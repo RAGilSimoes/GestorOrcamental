@@ -18,11 +18,11 @@ public class GestorOrcamental1 {
         System.out.println("3 - Ver compras efetuadas ");
         System.out.println("4 - Ver a média semanal ");
         System.out.println("5 - Sair ");
-        System.out.println("Introduza aqui a opção:");
+        System.out.print("Introduza aqui a opção: ");
         escolha = Le.umInt();
 
-        if (escolha == 1) {
-                double compra1, orcamento;
+        switch (escolha) {
+            case 1 : double compra1, orcamento;
                 System.out.print("Introduza o valor da 1ª compra: ");
                 compra1 = Le.umDouble();
                 System.out.print("Introduza o valor do orçamento: ");
@@ -50,22 +50,14 @@ public class GestorOrcamental1 {
                         System.out.println("Gastou " + gastos_em_percentagem + "% do seu orçamento e ficou com " + saldo_final_percentagem + "% do seu orçamento.");
                     }
                 }
-        }
+            break;
 
-        if (escolha == 2) {
-            System.out.println("2 - Eliminar a última compra");
+            case 2 : System.out.println("2 - Eliminar a última compra "); break;
+            case 3 : System.out.println("3 - Ver compras efetuadas "); break;
+            case 4 : System.out.println("4 - Ver a média semanal "); break;
+            case 5 : System.out.println("5 - Sair "); break;
         }
+        
 
-        if (escolha == 3) {
-            System.out.println("3 - Ver compras efetuadas");
-        }
-
-        if (escolha == 4) {
-            System.out.println("4 - Ver a média semanal");
-        }
-
-        if (escolha == 5) {
-            System.out.println("5 - Sair");
-        }
     } 
 }
