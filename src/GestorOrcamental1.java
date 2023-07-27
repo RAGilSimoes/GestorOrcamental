@@ -36,18 +36,13 @@ public class GestorOrcamental1 {
             switch (escolha) {
                 case 1: fazerCompras();break;
 
-                case 2:
-                    System.out.println("2 - Eliminar a última compra ");
-                    break;
-                case 3:
-                    System.out.println("3 - Ver compras efetuadas ");
-                    break;
-                case 4:
-                    System.out.println("4 - Ver a média semanal ");
-                    break;
-                case 5:
-                    System.out.println("5 - Sair ");
-                    break;
+                case 2: System.out.println("2 - Eliminar a última compra ");break;
+
+                case 3: verComprasEfetuadas();break;
+
+                case 4: System.out.println("4 - Ver a média semanal ");break;
+
+                case 5: System.out.println("5 - Sair ");break;
             }
 
             System.out.println();
@@ -90,6 +85,30 @@ public class GestorOrcamental1 {
                 }
             }
         }
+    }
+
+    public static void verComprasEfetuadas() {
+        int n_compras;
+        int valor_gasto = 0;
+
+        System.out.print("Introduza o número de compras: ");
+        n_compras = Le.umInt();
+
+        int[] compras = new int[n_compras];
+
+        for (int i = 1; i <= n_compras; i++) {
+            System.out.print("Introduza o valor da " + i + " compra: ");
+            compras[i-1] = Le.umInt();
+        }
+
+        for (int compra : compras) {
+            valor_gasto += compra;
+        }
+
+        System.out.println("O número de compras efetuadas é de "+ compras.length);
+        System.out.println("O valor gasto é de " + valor_gasto + "€");
+
+
     }
 }
 
